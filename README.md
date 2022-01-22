@@ -6,4 +6,4 @@ docker run -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -inMemory -
 
 Use NoSQL Workbench to view the tables created
 
-Postman to make the GET, POST, PUT requests
+Postman to make the GET, POST, PUT requests - api_requests.json can be used for this purpose
