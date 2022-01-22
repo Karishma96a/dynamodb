@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "7f2ca5d3-2a16-4991-b8c9-e947f8dc146d",
+		"name": "CRAFT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE_ACCOUNTING_PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\" : \"P01\",\n    \"productType\" : \"QB_ACCOUNTING\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_TSHEETS_PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\" : \"P02\",\n    \"productType\" : \"TSHEETS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_PAYROLL_PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\" : \"P03\",\n    \"productType\" : \"QB_PAYROLL\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_PAYMENTS_PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\" : \"P04\",\n    \"productType\" : \"QB_PAYMENTS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_CUSTOMER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"custId\": \"1\",\n    \"businessProfile\": {\n        \"companyName\": \"ABC\",\n        \"legalName\": \"XYZ\",\n        \"businessAddress\": {\n            \"line1\": \"line1\",\n            \"line2\": \"line2\",\n            \"city\": \"chennai\",\n            \"state\": \"tn\",\n            \"zip\": \"41\",\n            \"country\": \"ind\"\n        },\n        \"legalAddress\": {\n            \"line1\": \"line12\",\n            \"line2\": \"line22\",\n            \"city\": \"chennai2\",\n            \"state\": \"tn2\",\n            \"zip\": \"412\",\n            \"country\": \"ind2\"\n        },\n        \"taxIdentifier\": {\n            \"pan\": \"hjfhsjhfs\",\n            \"ein\": \"jfsdhfd\"\n        },\n        \"email\": \"abc@gmail.com\",\n        \"website\": \"abc.com\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_SUBSCRIPTION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\" : \"1\",\n    \"productId\" : \"P01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE_CUSTOMER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyName\": \"Karishma\",\n    \"legalName\": \"Wasssup\",\n    \"businessAddress\": {\n        \"line1\": \"lineeeee\",\n        \"line2\": \"line2\",\n        \"city\": \"chennai\",\n        \"state\": \"tn\",\n        \"zip\": \"41\",\n        \"country\": \"ind\"\n    },\n    \"legalAddress\": {\n        \"line1\": \"line12\",\n        \"line2\": \"line22\",\n        \"city\": \"chennai2\",\n        \"state\": \"tn2\",\n        \"zip\": \"412\",\n        \"country\": \"ind2\"\n    },\n    \"taxIdentifier\": {\n        \"pan\": \"hjfhsjhfs\",\n        \"ein\": \"jfsdhfd\"\n    },\n    \"email\": \"abc@gmail.com\",\n    \"website\": \"abc.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/business-profile/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"business-profile",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
